@@ -7,6 +7,8 @@ class FirstScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: CircleAvatar(child: Text("D"),),
+        actions: [Icon(Icons.headphones), Icon(Icons.hearing)],
         backgroundColor: Colors.green,
         title: Text(
           "WhatsApp",
