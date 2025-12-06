@@ -7,7 +7,7 @@ class FirstScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: CircleAvatar(child: Text("D"),),
+        leading: CircleAvatar(child: Text("D")),
         actions: [Icon(Icons.headphones), Icon(Icons.hearing)],
         backgroundColor: Colors.green,
         title: Text(
@@ -15,6 +15,8 @@ class FirstScreen extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
+      body: Text("Hello World", style: TextStyle(color: Colors.red),),
+      backgroundColor: Colors.amber,
     );
   }
 }
