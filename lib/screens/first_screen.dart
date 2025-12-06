@@ -15,13 +15,22 @@ class FirstScreen extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
-      body: Row(
-        children: [
-          Text("Hello 1"),
-          Text("Another 2"),
-          Text("Hello 3")
-        ],
-      )
+      body: Container(
+        width: 300,
+        height: 300,
+        margin: EdgeInsets.all(20),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: Colors.blue,
+          borderRadius: BorderRadius.circular(15)
+        ),
+        child: Text("My name is Diwas",
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 30,
+          fontWeight: FontWeight.bold
+        ),)
+      ),
       
     );
   }
