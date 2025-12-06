@@ -15,8 +15,14 @@ class FirstScreen extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
-      body: Text("Hello World", style: TextStyle(color: Colors.red),),
-      backgroundColor: Colors.amber,
+      body: Row(
+        children: [
+          Text("Hello 1"),
+          Text("Another 2"),
+          Text("Hello 3")
+        ],
+      )
+      
     );
   }
 }
