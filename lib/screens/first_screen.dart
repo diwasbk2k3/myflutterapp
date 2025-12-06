@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myflutterapp/screens/profile_screen.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
@@ -15,23 +16,32 @@ class FirstScreen extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
-      body: Container(
-        width: 300,
-        height: 300,
-        margin: EdgeInsets.all(20),
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          color: Colors.blue,
-          borderRadius: BorderRadius.circular(15)
-        ),
-        child: Text("My name is Diwas",
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 30,
-          fontWeight: FontWeight.bold
-        ),)
+      body: Column(
+        children: [
+          Container(
+            width: 300,
+            height: 300,
+            margin: EdgeInsets.all(20),
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(15)
+            ),
+            child: Text("My name is Diwas",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30,
+              fontWeight: FontWeight.bold
+            ),),
+          ),
+          ElevatedButton(
+            // We can use pushReplacement for not letting users to go to back
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen(),));
+          }, 
+          child: Text("Show to Profile"))
+        ],
       ),
-      
     );
   }
 }
