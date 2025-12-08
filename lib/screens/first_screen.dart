@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myflutterapp/screens/new_profile_screen.dart';
 import 'package:myflutterapp/screens/profile_screen.dart';
 
 class FirstScreen extends StatelessWidget {
@@ -39,7 +40,13 @@ class FirstScreen extends StatelessWidget {
             onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen(),));
           }, 
-          child: Text("Show to Profile"))
+          child: Text("Go to Profile")),
+          
+          ElevatedButton(
+            onPressed: (){
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => NewProfileScreen(),));
+          }, 
+          child: Text("Go to New Profile")),
         ],
       ),
     );
