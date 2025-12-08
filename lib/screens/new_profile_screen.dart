@@ -5,6 +5,19 @@ class NewProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
+        centerTitle: true,
+        leading: Icon(Icons.home, color: Colors.white,),
+        title: Text("Diwas Info", style: TextStyle(
+          color: Colors.white,
+          fontWeight: FontWeight.bold
+        ),),
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.search), color: Colors.white)
+        ],
+      ),
+    );
   }
 }
