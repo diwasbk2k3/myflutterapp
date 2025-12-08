@@ -24,23 +24,26 @@ class NewProfileScreen extends StatelessWidget {
       ),
 
       // Body
-      body: Column(
-        children: [
-          CircleAvatar(
-            radius: 40,
-            backgroundColor: Colors.deepPurple,
-            child: Text(
-              "D",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 30,
+      body: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          children: [
+            CircleAvatar(
+              radius: 40,
+              backgroundColor: Colors.deepPurple,
+              child: Text(
+                "D",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                ),
               ),
             ),
-          ),
-          Text("Diwas Bk"),
-          Text("Hello, I am a Full Stack Developer with keen intereset in Data Science & Artificial Intelligence.")
-        ],
+            Text("Diwas Bk"),
+            Text("Hello, I am a Full Stack Software Developer with keen interest in Data Science and Artificial Intelligence.")
+          ],
+        ),
       ),
     );
   }
