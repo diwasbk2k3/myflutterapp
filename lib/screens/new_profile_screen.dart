@@ -40,8 +40,27 @@ class NewProfileScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Text("Diwas Bk"),
-            Text("Hello, I am a Full Stack Software Developer with keen interest in Data Science and Artificial Intelligence.")
+            Text(
+              "Diwas Bk",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+            ),
+            Text(
+              "Hello, I am a Full Stack Software Developer with keen interest in Data Science and Artificial Intelligence.",
+            ),
+            Row(
+              children: [
+                Container(
+                  width:120,
+                  height: 100,
+                  color: Colors.deepPurpleAccent,
+                ),
+                Container(
+                  width: 120,
+                  height: 100,
+                  color: Colors.deepPurpleAccent,
+                ),
+              ],
+            ),
           ],
         ),
       ),
