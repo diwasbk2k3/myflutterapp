@@ -37,6 +37,7 @@ class _BottomLayoutScreenState extends State<BottomLayoutScreen> {
       body: lstBottomScreens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.lightBlueAccent,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),

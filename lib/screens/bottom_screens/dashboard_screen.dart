@@ -6,7 +6,11 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox.expand(
-      child: Text("Welcome to Dashboard Screen."),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.orange
+        ),
+        child: Center(child: Text("Welcome to Dashboard Screen.", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20)))),
     );
   }
 }

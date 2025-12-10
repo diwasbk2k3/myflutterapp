@@ -6,7 +6,11 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox.expand(
-      child: Text("Welcome to Profile Screen."),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.deepPurpleAccent
+        ),
+        child: Center(child: Text("Welcome to Profile Screen.", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20)))),
     );
   }
 }

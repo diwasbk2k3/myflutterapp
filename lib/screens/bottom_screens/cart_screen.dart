@@ -6,7 +6,11 @@ class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox.expand(
-      child: Text("Welcome to Cart Screen."),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.pink
+        ),
+        child: Center(child: Text("Welcome to Cart Screen.", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20)))),
     );
   }
 }
