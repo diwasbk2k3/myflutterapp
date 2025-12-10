@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myflutterapp/screens/bottom_layout_screen.dart';
 import 'package:myflutterapp/screens/first_screen.dart';
 import 'package:myflutterapp/screens/grid_view_builder_screen.dart';
 import 'package:myflutterapp/screens/grid_view_screen.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: GridViewBuilderScreen(),
+      home: BottomLayoutScreen(),
     );
   }
 }
