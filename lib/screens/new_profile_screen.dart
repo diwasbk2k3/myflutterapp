@@ -7,7 +7,7 @@ class NewProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.deepPurpleAccent,
         centerTitle: true,
         leading: Icon(Icons.home, color: Colors.white),
         title: Text(
@@ -29,17 +29,18 @@ class NewProfileScreen extends StatelessWidget {
         child: Column(
           children: [
             CircleAvatar(
-              radius: 40,
-              backgroundColor: Colors.deepPurple,
+              radius: 60,
+              backgroundColor: Colors.deepPurpleAccent,
               child: Text(
                 "D",
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 30,
+                  fontSize: 60,
                 ),
               ),
             ),
+            SizedBox(height: 20),
             Text(
               "Diwas Bk",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
@@ -47,17 +48,67 @@ class NewProfileScreen extends StatelessWidget {
             Text(
               "Hello, I am a Full Stack Software Developer with keen interest in Data Science and Artificial Intelligence.",
             ),
+            SizedBox(height: 30),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  width:120,
+                  width: 160,
                   height: 100,
-                  color: Colors.deepPurpleAccent,
+                  decoration: BoxDecoration(
+                    color: Colors.deepPurpleAccent,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Total Projects",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
+                      ),
+                      Text(
+                        "250 +",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 Container(
-                  width: 120,
+                  width: 160,
                   height: 100,
-                  color: Colors.deepPurpleAccent,
+                  decoration: BoxDecoration(
+                    color: Colors.deepPurpleAccent,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Total Income",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
+                      ),
+                      Text(
+                        "500K +",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
