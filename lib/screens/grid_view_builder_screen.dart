@@ -41,9 +41,20 @@ class GridViewBuilderScreen extends StatelessWidget {
           mainAxisSpacing: 10,
         ),
         itemBuilder: (context, index) {
-          return Container(
-            decoration: BoxDecoration(color: Colors.lightBlue),
-            child: Text(users[index]),
+          return Padding(
+            padding: const EdgeInsets.all(5),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.lightBlue,
+                borderRadius:BorderRadius.circular(12) 
+              ),
+              child: Center(
+                child: Text(users[index], style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold
+                ),),
+              ),
+            ),
           );
         },
       ),
