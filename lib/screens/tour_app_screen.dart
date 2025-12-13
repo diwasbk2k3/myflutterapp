@@ -30,7 +30,7 @@ class TourAppScreen extends StatelessWidget {
         backgroundColor: Colors.green,
         title: Text(
           "Tour App",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontFamily: "OpenSans Italic"),
         ),
       ),
       body: Column(
